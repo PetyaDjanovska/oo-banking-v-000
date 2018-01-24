@@ -1,3 +1,5 @@
+
+
 class Transfer
   # your code here
   attr_accessor :sender, :receiver, :amount, :status
@@ -11,6 +13,7 @@ class Transfer
 
   def valid?
     self.sender.valid? || self.receiver.valid?
+    binding.pry
   end
 
 
